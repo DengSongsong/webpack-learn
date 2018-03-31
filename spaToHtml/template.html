@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 注入Chunk app 依赖的CSS -->
+    <link rel="stylesheet" href="app?_inline">
+    <!--注入 google_analytics 中的 JS 代码-->
+    <script src="./google_analytics.js?_inline"></script>
+    <!-- 异步加载Disqus评论 -->
+    <script src="https://dive-into-webpack.disqus.com/embed.js" async></script>
+</head>
+<body>
+    <div id="app"></div>
+    <!-- 导入app依赖的javascript文件 -->
+    <script src="app"></script>
+    <!-- Disqus评论容器 -->
+    <div id="dispus_thread"></div>
+</body>
+</html>
